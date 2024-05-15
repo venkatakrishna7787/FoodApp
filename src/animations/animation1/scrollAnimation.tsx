@@ -23,7 +23,6 @@ const ScrollAnimation = () => {
   const x = useSharedValue(0);
   const scrollEvent = useAnimatedScrollHandler({
     onScroll: ({contentOffset: {x: value}}) => {
-      console.log(value);
       x.value = value;
     },
   });
